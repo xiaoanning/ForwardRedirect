@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet>
+  	<servlet-name>deleteAction</servlet-name>
+  	<servlet-class>servlet.DeleteAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>deleteAction</servlet-name>
+  	<url-pattern>/deleteAction</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>insertAction</servlet-name>
+  	<servlet-class>servlet.InsertAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>insertAction</servlet-name>
+  	<url-pattern>/insertAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>insertView</servlet-name>
+  	<servlet-class>servlet.InsertView</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>insertView</servlet-name>
+  	<url-pattern>/insertView</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>queryAllAction</servlet-name>
+  	<servlet-class>servlet.QueryAllAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>queryAllAction</servlet-name>
+  	<url-pattern>/queryAllAction</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>queryAllView</servlet-name>
+  	<servlet-class>servlet.QueryAllView</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>queryAllView</servlet-name>
+  	<url-pattern>/queryAllView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>updateAction</servlet-name>
+  	<servlet-class>servlet.UpdateAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>updateAction</servlet-name>
+  	<url-pattern>/updateAction</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>updateView</servlet-name>
+  	<servlet-class>servlet.UpdateView</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>updateView</servlet-name>
+  	<url-pattern>/updateView</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
